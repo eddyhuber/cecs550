@@ -1,2 +1,2 @@
 Notice how this file only shows up in "eddy-dev" branch, and not master.
-UNLESS someones pulls this branch, checks out master branch, adds this file to it, commits, then pushes master back.
+UNLESS someones merges this branch with master (or another branch)
