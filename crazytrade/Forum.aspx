@@ -1,21 +1,29 @@
 ﻿<%@ Page Title="Forum" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Forum.aspx.cs" Inherits="Forum" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+    <script>
+        function myFunction(arg) {
+            //document.getElementById("demo").innerHTML = "Hello World";
+            var a = arg;
+            //alert("Hey there #"+ a);
+            __doPostBack('btnSave', arg);
+        }
+    </script>
+    <h1><%: Title %></h1>
+    <h3>Welcome for the forums!</h3>
 
-        <h1><%: Title %></h1>
-        <h3>Get Your Answers Today!</h3>
-        <ol class="round">
-            <li class ="one">
-                <h5>Speak to the public by answering or asking a question</h5><br />
-            </li>
-            <li class="two">
-                <h5>Head on over and 
-                    <a id="A1" runat="server" href ="~/Account/Register.aspx">Create a New Account</a>
-                    to speak to a professional today
-                </h5><br />
-            </li>
-        </ol>
+     <input runat="server" id="createbt" type="button" align="right" Value="Create Post" onclick="location.href='CreatePost.aspx'"/>
 
+    <hr width="100%" style="border: 2px dashed #C0C0C0" color="#FFFFFF" size="6"> 
+
+    <%{ Response.Write(DoRead()); }%>
+    <%{         if (IsPostBack)
+        {
+           
+            string parameter = Request["__EVENTARGUMENT"];
+            Response.Write(LoadPost(parameter));
+        }
+        }%>
 
     <article>
         <p>        

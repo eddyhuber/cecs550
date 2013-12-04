@@ -51,6 +51,7 @@ public partial class SiteMaster : MasterPage
             // Set Anti-XSRF token
             ViewState[AntiXsrfTokenKey] = Page.ViewStateUserKey;
             ViewState[AntiXsrfUserNameKey] = Context.User.Identity.Name ?? String.Empty;
+            string testa = (string)ViewState[AntiXsrfTokenKey];
         }
         else
         {

@@ -15,7 +15,10 @@
             Creates an authentication request to verify that a user controls
             some given Identifier.
             </summary>
-            <param name="userSuppliedIdentifier">
+            <param name="
+                   
+
+uppliedIdentifier">
             The Identifier supplied by the user.  This may be a URL, an XRI or i-name.
             </param>
             <param name="realm">

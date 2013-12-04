@@ -1,4 +1,61 @@
-﻿html {
+﻿.subtitlebox
+{
+    width:100%;
+    border:2px solid black;
+    text-align:center;
+}
+.messagebox
+{
+    width:100%;
+    border:2px solid gray;
+    margin:0px;
+    text-wrap:normal;
+    display: inline-block;
+    margin-top: 0;
+    height:auto;
+    word-wrap: break-word;
+  
+}
+.labela
+{
+    text-decoration-color:red;
+}
+.code_input
+{
+    text-wrap:inherit;
+    border:1px solid #c3c3c3;
+    width:100%;
+    height:600px;
+    background-color:#ffffff;
+    color:#000000;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+div.post:hover
+{
+    background-color:yellow;
+}
+.postsplit
+{
+    border-style:dashed;
+    border-width:2px;
+}
+.buttonRight
+{
+    right: 8px;
+    float: right;
+}
+.navbar {
+    border:2px solid black;
+    text-align:center;
+    width:80%;
+    height:40px;
+    background-color:#000;
+}
+
+
+html {
     background-color: #e2e2e2;
     margin: 0;
     padding: 0;
@@ -405,7 +462,7 @@ fieldset {
         background: #fff;
         color: #333;
         font-size: 1.2em;
-        margin: 5px 0 6px 0;
+        margin: 0px 0 6px 0;
         padding: 5px;
         width: 300px;
     }
@@ -436,7 +493,8 @@ fieldset {
         padding: 7px;
         margin-right: 8px;
         width: auto;
-    }
+    height: 32px;
+}
 
     td input[type="submit"],
     td input[type="button"],
@@ -561,3 +619,4 @@ td {
 tr.pager td {
     padding: 0 0.25em 0 0;
 }
+
