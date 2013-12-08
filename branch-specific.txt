@@ -1,2 +1,0 @@
-Notice how this file only shows up in "eddy-dev" branch, and not master.
-UNLESS someones merges this branch with master (or another branch)
