@@ -68,7 +68,24 @@
 
 
     <div id="body">
-        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <%--<asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />--%>
+         <div class="menu">
+            <section class="featured">
+                <div class="content-wrapper">
+                    <nav>
+                    <ul id="uppermenu">
+                        <li><a id="home" runat="server" href="~/">Home</a></li>
+                        <li><a id="about" runat="server" href="~/About.aspx">About</a></li>
+                        <li><a id="contact" runat="server" href="~/Contact.aspx">Contact</a></li>
+                        <li><a id="forum" runat="server" href="~/Forum.aspx">Forum</a></li>
+                        <li><a id="reports" runat="server" href="~/Reports.aspx">Reports</a></li>
+                        <li><a id="orders" runat="server" href="~/Orders.aspx">Orders</a></li>
+
+                    </ul>
+                </nav>
+                </div>
+            </section>
+        </div>
         <section class="content-wrapper main-content clear-fix">
             <asp:ContentPlaceHolder runat="server" ID="MainContent" />
         </section>
@@ -80,6 +97,8 @@
             <div class="float-left">
                 <p>
                     &copy; <%: DateTime.Now.Year %> CrazyTrades
+                    <br />
+                    <a id="tandc" runat="server" href="~/TermsAndConditions.aspx">Terms and Conditions</a>
                 </p>
             </div>
             <div class="float-right">

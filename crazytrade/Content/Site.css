@@ -259,6 +259,32 @@ ul#menu {
             text-decoration: none;
         }
 
+ul#uppermenu {
+    font-size: 1.75em;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+    ul#uppermenu li {
+        display: inline;
+        list-style: none;
+        padding-left: 15px;
+    }
+
+        ul#uppermenu li a {
+            background: none;
+            color: #999;
+            text-decoration: none;
+        }
+
+        ul#uppermenu li a:hover {
+            background-color: #a6dbed;
+            color: #333;
+            text-decoration: none;
+        }
+
 
 /* page elements
 ----------------------------------------------------------*/

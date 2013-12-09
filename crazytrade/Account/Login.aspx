@@ -43,7 +43,7 @@
 
     <section id="socialLoginForm">
         <h2>Single Sign-On</h2>
-        <h4>Use another service to log in.</h4>
-        <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
+        <h4>Currently in Development.</h4>
+        <!-- <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" /> -->
     </section>
 </asp:Content>
